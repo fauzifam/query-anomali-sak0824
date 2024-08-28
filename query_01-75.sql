@@ -325,7 +325,7 @@ SELECT
           AND b5r14a_value = 4
           AND b5r15a_value IS NOT NULL
           AND (b5r15a_value >= 84111 AND b5r15a_value <= 84300)
-          AND b5r23a_value <> 1
+          AND b5r24b_value <> 1
         ) THEN 'A34;' END,
         
         --A35
