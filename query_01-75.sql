@@ -442,8 +442,8 @@ SELECT
         --A48
         CASE WHEN (
           art.b4k10 >= 5
-          AND b5r33a_value IS NOT NULL
-          AND b5r33a_value = 5
+          AND b5r32a_value IS NOT NULL
+          AND b5r32a_value = 5
           AND b5r33a_value IS NOT NULL
           AND (b5r33a_value < 01111 OR b5r33a_value > 03279)
         ) THEN 'A48;' END,
@@ -451,8 +451,8 @@ SELECT
         --A49
         CASE WHEN (
           art.b4k10 >= 5
-          AND b5r33a_value IS NOT NULL
-          AND b5r33a_value = 6
+          AND b5r32a_value IS NOT NULL
+          AND b5r32a_value = 6
           AND b5r33a_value IS NOT NULL
           AND ((b5r33a_value >= 1111 AND b5r33a_value <= 3279) OR (b5r33a_value >= 84111 AND b5r33a_value <= 84300))
         ) THEN 'A49;' END,
