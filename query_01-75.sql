@@ -340,9 +340,12 @@ SELECT
         ) THEN 'A35;' END,
         
         --A36
-        --CASE WHEN (
-          
-        --) THEN 'A36;' END,
+        CASE WHEN (
+          art.b4k10 >= 5
+          AND ((b5r33a_value >= 64110 AND b5r33a_value <= 64132) OR
+              (b5r33a_value >= 84111 AND b5r33a_value <= 84234) OR b5r33a_value = 99000)
+          AND b5r6a_value = 1
+        ) THEN 'A36;' END,
         
         --A37
         CASE WHEN (
