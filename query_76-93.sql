@@ -85,14 +85,14 @@ SELECT
         CASE WHEN (
           art.b4k10 >= 5
           AND b5r52b_value = 1
-          AND b5r55a IS NULL
+          AND b5r56a_value IS NULL
         ) THEN 'A85;' END,
         
         --A86
         CASE WHEN (
           art.b4k10 >= 5
           AND b5r52b_value = 1
-          AND b5r55b IS NULL
+          AND b5r56b_value IS NULL
         ) THEN 'A86;' END,
         
         --A87
@@ -131,8 +131,8 @@ SELECT
                b5r33b_value = 4131 OR b5r33b_value = 4211 OR b5r33b_value = 4213 OR b5r33b_value = 4223 OR
                b5r33b_value = 4224 OR (b5r33b_value >= 4311 AND b5r33b_value <= 4419) OR b5r33b_value = 5120 OR
                b5r33b_value = 5411 OR b5r33b_value = 5413 OR b5r33b_value = 5414 OR b5r33b_value = 8311 OR b5r33b_value = 8312)
-          AND b5r33a_value IS NOT NULL
-          AND b5r33a_value <> 4
+          AND b5r32a_value IS NOT NULL
+          AND b5r32a_value <> 4
         ) THEN 'A90;' END,
         
         --A91
