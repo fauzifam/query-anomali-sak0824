@@ -240,7 +240,7 @@ SELECT
           AND (b5r15b_value = 1311 OR b5r15b_value = 1312 OR b5r15b_value = 3142 OR b5r15b_value = 3143 OR
                (b5r15b_value >= 6111 AND b5r15b_value <= 6340) OR (b5r15b_value >= 9211 AND b5r15b_value <= 9216))
           AND b5r15a_value IS NOT NULL
-          AND (b5r15a_value < 1111 OR b5r15a_value > 3279)
+          AND (b5r15a_value < 01111 OR b5r15a_value > 03279)
         ) THEN 'A25;' END,
         
         --A26
@@ -279,7 +279,7 @@ SELECT
           AND b5r14a_value IS NOT NULL
           AND b5r14a_value = 5
           AND b5r15a_value IS NOT NULL
-          AND b5r15a_value >= 5100
+          AND (b5r15a_value < 01111 OR b5r15a_value > 03279)
         ) THEN 'A29;' END,
         
         --A30
@@ -288,7 +288,7 @@ SELECT
           AND b5r14a_value IS NOT NULL
           AND b5r14a_value = 6
           AND b5r15a_value IS NOT NULL
-          AND ((b5r15a_value >= 1111 AND b5r15a_value <= 3279) OR (b5r15a_value >= 84111 AND b5r15a_value <= 84300))
+          AND ((b5r15a_value >= 01111 AND b5r15a_value <= 03279) OR (b5r15a_value >= 84111 AND b5r15a_value <= 84300))
         ) THEN 'A30;' END,
         
         --A31
@@ -445,7 +445,7 @@ SELECT
           AND b5r33a_value IS NOT NULL
           AND b5r33a_value = 5
           AND b5r33a_value IS NOT NULL
-          AND b5r33a_value >= 5100
+          AND (b5r33a_value < 01111 OR b5r33a_value > 03279)
         ) THEN 'A48;' END,
         
         --A49
@@ -462,8 +462,8 @@ SELECT
           art.b4k10 >= 5
           AND b5r33a_value IS NOT NULL
           AND (b5r33a_value >= 84111 AND b5r33a_value <= 84300)
-          AND b5r14a_value IS NOT NULL
-          AND b5r33a_value <> 4
+          AND b5r32a_value IS NOT NULL
+          AND b5r32a_value <> 4
         ) THEN 'A50;' END,
         
         --A51
@@ -479,8 +479,8 @@ SELECT
           art.b4k10 >= 5
           AND b5r33a_value IS NOT NULL
           AND (b5r33a_value >= 84111 AND b5r33a_value <= 84300)
-          AND b5r14a_value IS NOT NULL
-          AND b5r33a_value = 4
+          AND b5r32a_value IS NOT NULL
+          AND b5r32a_value = 4
           AND art.b4k5_value IS NOT NULL
           AND art.b4k5_value = 2
         ) THEN 'A52;' END,
@@ -595,8 +595,7 @@ SELECT
           AND b5r47d_value IS NOT NULL
           AND b5r47d_value = 5
           AND b5r48a_value IS NOT NULL
-          AND b5r48a_value < 1111
-          AND b5r48a_value > 3279
+          AND (b5r48a_value < 1111 OR b5r48a_value > 3279)
         ) THEN 'A65;' END,
         
         --A66
