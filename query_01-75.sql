@@ -638,14 +638,14 @@ SELECT
         CASE WHEN (
           art.b4k10 >= 5
           AND b5r6g_jml = 1
-          AND b5r6g1_kd IS NULL
+          AND b5r6g1_kd_value IS NULL
         ) THEN 'A70;' END,
         
         --A71
         CASE WHEN (
           art.b4k10 >= 5
           AND b5r6g_jml = 2
-          AND (b5r6g1_kd IS NULL)
+          AND (b5r6g1_kd_value IS NULL)
         ) THEN 'A71;' END,
         
         --A72
@@ -659,7 +659,7 @@ SELECT
         CASE WHEN (
           art.b4k10 >= 5
           AND b5r6g_jml = 3
-          AND (b5r6g1_kd IS NULL)
+          AND (b5r6g1_kd_value IS NULL)
         ) THEN 'A73;' END,
         
         --A74
