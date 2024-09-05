@@ -21,21 +21,21 @@ SELECT
         --A76
         CASE WHEN (
           art.b4k10 >= 5
-          AND b5r6g1_s_l = 'A'
+          AND b5r6g1_s_l = 1
           AND b5r6g1_s_kd_value IS NULL
         ) THEN 'A76;' END,
         
         --A77
         CASE WHEN (
           art.b4k10 >= 5
-          AND b5r6g2_s_l = 'A'
+          AND b5r6g2_s_l = 1
           AND b5r6g2_s_kd_value IS NULL
         ) THEN 'A77;' END,
         
         --A78
         CASE WHEN (
           art.b4k10 >= 5
-          AND b5r6g3_s_l = 'A'
+          AND b5r6g3_s_l = 1
           AND b5r6g3_s_kd_value IS NULL
         ) THEN 'A78;' END,
         
@@ -153,7 +153,7 @@ SELECT
         CASE WHEN (
           art.b4k10 >= 5
           AND b4k3_value IS NOT NULL
-          AND b4k3_value = 9
+          AND b4k3_value = '09'
           AND (b5r15b_value <> 5120 OR b5r15b_value <> 5131 OR b5r15b_value <> 5151 OR b5r15b_value <> 5152 OR
                b5r15b_value <> 5153 OR b5r15b_value <> 5162 OR b5r15b_value <> 5311 OR b5r15b_value <> 5321 OR
                b5r15b_value <> 5322 OR b5r15b_value <> 5414 OR b5r15b_value <> 9111 OR b5r15b_value <> 9112 OR
